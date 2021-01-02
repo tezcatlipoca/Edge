@@ -1,28 +1,30 @@
 <div class="grid-item">
     <figure class="{{post_class}}">
         <a class="post-link" href="{{url}}">
-            <img class="post-image lazyload" data-srcset="{{> srcset}}"
-                data-sizes="auto" src="{{img_url feature_image size="s"}}"
-                alt="{{title}}">
+            <img class="post-image lazyload" data-srcset="{{> srcset}}" data-sizes="auto"
+                src="{{img_url feature_image size=" s"}}" alt="{{title}}">
         </a>
         <a class="post-lightbox" href="{{img_url feature_image}}">
             <i class="icon icon-arrow-expand"></i>
         </a>
         <figcaption class="post-caption">
-            <h2 class="post-caption-title">{{title}}</h2>
-            <div class="post-caption-meta">
-                {{#primary_tag}}
-                    <span class="post-caption-meta-item post-caption-meta-tag">
-                        <a href="{{url}}">{{name}}</a>
-                    </span>
-                {{/primary_tag}}
-                <span class="post-caption-meta-item post-caption-meta-date">
-                    <time
-                        datetime="{{date format="YYYY-MM-DD"}}">{{date published_at}}</time>
-                </span>
-                <span class="post-caption-meta-item post-caption-meta-link">
-                    <a href="{{url}}">View project</a>
-                </span>
+            <div class="post-caption-header">
+                <div class="post-caption-header-title">
+                    <div>{{title}}</div>
+                    <div class="post-caption-meta">
+                        {{#primary_tag}}
+                        <span class="post-caption-meta-item post-caption-meta-tag">
+                            <a href="{{url}}">{{name}}</a>
+                        </span>
+                        {{/primary_tag}}
+                        <span class="post-caption-meta-item post-caption-meta-date">
+                            <time datetime="{{date format=" YYYY-MM-DD"}}">{{date published_at}}</time>
+                        </span>
+                    </div>
+                </div>
+                <div class="post-caption-header-button">
+                    <a href="{{url}}"><i class="fab fa-readme"></i></a>
+                </div>
             </div>
         </figcaption>
     </figure>
